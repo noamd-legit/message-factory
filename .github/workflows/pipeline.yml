@@ -1,0 +1,11 @@
+name: Legit Workflow
+
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "shit"
+      run: |
+        echo "123"
+        echo ${{ secrets.GITHUB_TOKEN }}
