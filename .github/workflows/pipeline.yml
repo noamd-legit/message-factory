@@ -3,6 +3,8 @@ name: Legit Workflow
 on: [push, pull_request]
 jobs:
   test:
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
     - name: "shit"
