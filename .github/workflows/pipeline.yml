@@ -1,0 +1,13 @@
+name: Legit Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  runs-on: ubuntu-latest
+  run: |
+    echo "123"
+    echo ${{ secrets.GITHUB_TOKEN }}
